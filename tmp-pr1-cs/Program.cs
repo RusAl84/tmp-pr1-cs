@@ -10,8 +10,6 @@ for(int n = 2; n <= 16; n++) {
         for (int j = 2*n; j < n * n+1; j++)
         {
             nop += 5; 
-            //Console.WriteLine("Александр не съел {0} ЁЖИКОВ", i);
-            //Console.WriteLine("ЁЖИК не съел {0} Сашу", j);
             int k = 13; nop++;
             nop+=2;
             while (k +3 <42) {
