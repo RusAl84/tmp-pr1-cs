@@ -2,7 +2,7 @@
 
 long nop = 0;  // number of operations
 
-for(int n = 1; n <= 16; n++) {
+for(int n = 1; n <= 64; n++) {
     var sw = new Stopwatch();
     sw.Start();
     nop++;
@@ -25,13 +25,11 @@ for(int n = 1; n <= 16; n++) {
         }
     }
     nop++;
-    //Console.WriteLine("s = {0} nop = {1} ", s, nop); 
-    if (n == 1)  
-        Console.WriteLine("n; nop ");
     sw.Stop();
     //Console.WriteLine("{0}; {1} ", n, sw.Elapsed.TotalMilliseconds * 1000000);
     Console.WriteLine("{1} ", n, sw.Elapsed.TotalMilliseconds * 1000000);
     //Console.WriteLine("{0}; {1} ", n, nop); 
+    //Console.WriteLine("{0} ", nop);
 }
 
 
