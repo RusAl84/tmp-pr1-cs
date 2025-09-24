@@ -1,7 +1,5 @@
 ﻿using System.Diagnostics;
-
 long nop = 0;  // number of operations
-
 for(int n = 1; n <= 64; n++) {
     var sw = new Stopwatch();
     sw.Start();
@@ -27,11 +25,10 @@ for(int n = 1; n <= 64; n++) {
     nop++;
     sw.Stop();
     //Console.WriteLine("{0}; {1} ", n, sw.Elapsed.TotalMilliseconds * 1000000);
-    Console.WriteLine("{1} ", n, sw.Elapsed.TotalMilliseconds * 1000000);
+    Console.WriteLine("{0} ", sw.Elapsed.TotalMilliseconds * 1000000);
     //Console.WriteLine("{0}; {1} ", n, nop); 
     //Console.WriteLine("{0} ", nop);
 }
-
 
 
 // Write result https://stackoverflow.com/questions/2329079/how-do-you-convert-stopwatch-ticks-to-nanoseconds-milliseconds-and-seconds
